@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Log and registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jim">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="jim2" onclick="login()">Log In</button>
+                <button type="button" class="jim2" onclick="register()">Register</button>
+            </div>
+            <div class="social">
+                <img src="fb.png">
+                <img src="tw.png">
+                <img src="gp.png">
+            </div>
+            <form id="login" class="input">
+                <input type="text" class="inputf" placeholder="User Id" required>
+                <input type="text" class="inputf" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>Forget Password?</span>
+                <button type="submit" class="submit">Log In</button>
+            </form>
+            <form id="register"class="input">
+                <input type="text" class="inputf" placeholder="User Id" required>
+                <input type="email" class="inputf" placeholder="Email Id" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions?</span>
+                <button type="submit" class="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+
+
+</body>
+</html>
